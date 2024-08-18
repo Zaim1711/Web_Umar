@@ -1,0 +1,535 @@
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.card-img-top {
+    height: 500px;
+    object-fit: cover;
+}
+
+.product-details {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.section-header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.social-links a {
+    color: #fff;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.sales-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sales-info img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sales-info h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sales-info p {
+    margin-top: 5px;
+    color: #555;
+}
+
+.imgtop {
+    margin-top: 20px;
+}
+
+.owl-carousel .item {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: auto;
+}
+
+.demob {
+    display: none;
+}
+
+.demob {
+    display: inline-block;
+    text-align: center;
+    background: #075e54;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10%;
+    margin: 10px 10px;
+
+}
+
+.demob i {
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sales-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: #1F316F;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sales-image {
+    flex: 1;
+    position: relative;
+}
+
+.sales-image img {
+    width: 100%;
+
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-buttons {
+    position: absolute;
+    top: 280px;
+    left: 95px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-buttons a.deweb {
+    background: #075e54;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info .social-links a {
+    margin-right: 15px;
+    color: #555;
+}
+
+.contact-info .social-links a i {
+    font-size: 1.2rem;
+}
+
+.promo-card,
+.car-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.promo-card img,
+.car-card img {
+    object-fit: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.promo-card:hover,
+.car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card .card-body,
+.car-card .card-body {
+    background-color: #fff;
+}
+
+.promo-card .card-title,
+.car-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.promo-card .card-text,
+.car-card .card-text {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 20px;
+    background: #000;
+    top: 20px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px; /* Geser sedikit ke atas untuk tidak berada di luar gambar */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: auto; /* Sesuaikan lebar otomatis sesuai konten */
+    text-align: center;
+}
+
+.carousel {
+    border-radius: 15px;
+    overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas */
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn-prev {
+    left: -50px;
+}
+
+.carousel-btn-next {
+    right: -50px;
+}
+
+.carousel-container1 {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Untuk mencegah gambar melampaui batas */
+    margin-bottom: 40px;
+    /* Jarak bawah jika diperlukan */
+}
+
+.carousel-inner1 {
+    position: relative;
+}
+
+.carousel-inner1 .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Pastikan gambar tidak melampaui kontainer */
+}
+
+.carousel-indicators1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    /* Pastikan indikator berada di atas gambar */
+}
+
+.carousel-indicators1 button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicators1 button.active {
+    transform: scale(1.2);
+    background: #fff;
+}
+
+.carousel-indicators1 button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+    background: #ccc;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: auto;
+    text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 1200px) {
+    .card-img-top {
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .carousel-container1 {
+        position: relative;
+        max-width: 800px;
+        margin: 10px;
+        bottom: 20px;
+    }
+
+    .carousel-inner1 .carousel-item img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .sales-image img {
+        width: auto;
+        /* Sesuaikan lebar otomatis */
+        max-width: 100%;
+        /* Pastikan tidak melebihi lebar kontainer */
+        height: 100%;
+        /* Isi tinggi kontainer atau ukuran layar */
+        max-height: 500px;
+        /* Maksimal tinggi gambar */
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        /* Pusatkan gambar secara horizontal */
+        justify-content: center;
+        object-fit: cover;
+        /* Potong gambar agar sesuai dengan kontainer */
+
+    }
+
+    .contact-buttons {
+        position: absolute;
+        margin-top: auto;
+        left: 50%;
+        /* Mengatur posisi horizontal ke tengah */
+        transform: translateX(-50%);
+        /* Mengeser ke kiri agar benar-benar di tengah */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Memastikan item-item dalam flex terpusat secara horizontal */
+    }
+
+    .carousel-container {
+        width: 350;
+        position: relative;
+        margin-top: 20px;
+        margin: 20px
+        
+    }
+
+    .carousel-item{
+        height: 350px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 120px;
+        /* Geser ke bawah untuk berada di luar gambar */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Opsi: tambahkan latar belakang semi-transparan */
+        color: white;
+        /* Warna teks */
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 200PX;
+        text-align: center;
+    }
+    .carousel {
+        border-radius: 15px;
+        height: 300px;
+    }
+    
+    .carousel-item img {
+        float: left;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+        .carousel-indicators1 {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 10px;
+            /* Menempatkan indikator di bawah gambar */
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+}
