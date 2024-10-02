@@ -3,7 +3,7 @@
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,18 +39,24 @@
         <h3>Promo</h3>
     </div>
     <div class="row">
-        @foreach ($promotions as $promotion)
-            <div class="col-md-4 mb-4">
-                <a href="{{ route('promotions.show', $promotion->id) }}">
-                    <div class="card promo-card">
-                        <img src="{{ asset('/storage/promotions/'.$promotion->image) }}" class="card-img-top" alt="{{ $promotion->title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ $promotion->title }}</h5>
-                        </div>
-                    </div>
-                </a>
+        @if($promotions->isEmpty())
+            <div class="col-12">
+                <p class="text-center">Saat ini tidak ada promo yang tersedia.</p>
             </div>
-        @endforeach
+        @else
+            @foreach ($promotions as $promotion)
+                <div class="col-md-4 mb-4">
+                    <a href="{{ route('promotions.show', $promotion->id) }}">
+                        <div class="card promo-card">
+                            <img src="{{ asset('/storage/promotions/'.$promotion->image) }}" class="card-img-top" alt="{{ $promotion->title }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $promotion->title }}</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        @endif
     </div>
 </div>
 

@@ -33,7 +33,7 @@
                                     <td class="pr hr">{{ $hargas[$index] ?? 'N/A' }}</td>
                                     <td class="pr rg">
                                         <span>
-                                            <a target="_blank" class="demob" href="https://web.whatsapp.com/send?phone=6282132698832&amp;text=Saya ingin info terbaru tentang%0aMobil *{{ $product->title }}*, {{ $type }} %0aHarga *{{ $hargas[$index] ?? 'N/A' }}* %0a{{ url()->current() }}">
+                                            <a target="_blank" class="demob" href="https://whatsapp.com/send?phone=6282132698832&amp;text=Saya ingin info terbaru tentang%0aMobil *{{ $product->title }}*, {{ $type }} %0aHarga *{{ $hargas[$index] ?? 'N/A' }}* %0a{{ url()->current() }}">
                                                 <i class="fab fa-whatsapp"></i> Chat
                                             </a>
                                         </span>
@@ -120,7 +120,7 @@
                         <div class="sales-image">
                             <img src="{{ asset('images/profile.jpg') }}" alt="Honda CR-V Hybrid">
                             <div class="contact-buttons">
-                                <a class="deweb" target="_blank" href="https://web.whatsapp.com/send?phone=6282132698832&amp;text=Mohon informasi lebih detail tentang produk Honda"><i class="fab fa-whatsapp"></i></a>
+                                <a class="deweb" target="_blank" href="https://wa.me/send?phone=6282132698832&amp;text=Mohon informasi lebih detail tentang produk Honda"><i class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                         <!-- Contact Info -->
@@ -130,11 +130,9 @@
                             <p>"Segera Hubungi Kami Untuk Mengetahui Informasi Promo Harga Mobil Honda Surabaya..."</p>
                             <p><i class="fas fa-phone"></i> <a href="tel:6282132698832">082132698832</a></p>
                             <p><i class="fas fa-fax"></i> 082132698832</p>
-                            <p><i class="fas fa-envelope"></i> <a href="mailto:danielkristiyono4@gmail.com">danielkristiyono4@gmail.com</a></p>
                             <div class="social-links">
-                                <a href="https://www.facebook.com/profile.php?id=100075826906646&amp;mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-                                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                                <a href="https://www.instagram.com/hondasalessurabaya/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                                <a href="https://www.facebook.com/umar.danis.33?id=100075826906646&amp;mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                                <a href="https://www.instagram.com/umar_hondajatim.id/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
                             </div>
                         </div>
                     </div>

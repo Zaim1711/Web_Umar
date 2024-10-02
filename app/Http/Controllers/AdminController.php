@@ -35,20 +35,19 @@ class AdminController extends Controller
 
     public function storePromotion(Request $request)
     {
-        $request->validate([
+        $validatedData = $request->validate([
             'title' => 'required|string|max:255',
-            'description' => 'required|string',
+            'description' => 'required|string|max:1000', // Membatasi panjang deskripsi
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
+        // Simpan gambar dan data promotion
         $imagePath = $request->file('image')->store('promotions', 'public');
-
-        // Simpan hanya nama file, bukan path lengkap
         $fileName = basename($imagePath);
 
         Promotions::create([
-            'title' => $request->title,
-            'description' => $request->description,
+            'title' => $validatedData['title'],
+            'description' => $validatedData['description'],
             'image' => $fileName,
         ]);
         return redirect()->route('admin.promotions')->with('success', 'Promotion created successfully.');

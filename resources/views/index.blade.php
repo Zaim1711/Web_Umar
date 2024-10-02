@@ -183,7 +183,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/+6285648499655" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/send?phone=6282132698832&amp;text=Mohon informasi lebih detail tentang produk Honda" class="whatsapp-button" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
 

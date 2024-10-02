@@ -7,6 +7,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PromotionsController;
 use App\Http\Controllers\ProductColorController;
 
+Route::get('/link', function () {
+    Artisan::call('storage:link');
+});
+
 // Public routes
 Route::get('/', [HomeController::class, 'index'])->name('index');
 
